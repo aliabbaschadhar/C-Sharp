@@ -8,7 +8,7 @@ namespace CSharpAdvance
         {
             // Enums = special "class" that contains a set of named integer constants.
             // Use enums when you have values that you know will not change,
-            // To get the integer value from an item, you must explicitly convert to an int 
+            // To get the integer value from an item from enum, you must explicitly convert to an int 
             // name = integer
 
             Console.WriteLine($"{Planets.Pluto} is a palent no# {(int)Planets.Pluto}"); // Mercury is a palent no# 8
@@ -27,7 +27,7 @@ namespace CSharpAdvance
 
         public static double Volume(PlanetRadius radius)
         {
-            return 4.0 / 3.0 * Math.PI * Math.Pow((double)radius, 3);
+            return (4.0 / 3.0) * Math.PI * Math.Pow((double)radius, 3); // to get an value from an item from enum you must convert it into interger or numeric datatype
         }
 
     }
