@@ -21,7 +21,6 @@ namespace CSharpAdvance
         class Car
         {
             // string model;
-            public string Model { get; set; }
 
             // public string Model
             // {
@@ -30,6 +29,8 @@ namespace CSharpAdvance
             // }
 
             // So as we know that ther is no additional logic required in the property, we can use auto-implemented properties
+            public string Model { get; set; }
+
             public Car(string model)
             {
                 this.Model = model;
